@@ -1,0 +1,51 @@
+.container {
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: 980px auto;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    text-decoration: None;
+    width: 100%;
+    height: 80px;
+  }
+  
+  .container h1{
+    color: black;
+    margin-left: 30px;
+  }
+  
+  .special{
+    display: flex;
+    
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  nav button {
+    background: linear-gradient(81.62deg, #2870EA 8.72%, #1B4AEF 85.01%);
+    ;
+    color:#fff;
+    border: None;
+    font-family: "Inter";
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 40px;
+    width: 136px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 8px;
+    gap: 8px;
+    margin-right: 10px;
+    margin-left: 25px;
+
+  }
+
+  .special span{
+    margin-left: 20px;
+  }

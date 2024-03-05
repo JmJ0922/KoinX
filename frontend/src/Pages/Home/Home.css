@@ -1,0 +1,31 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+p{
+    color: #3E5765;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+p b{
+    color: #0F1629;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+.down{
+    display: grid;
+    grid-template-columns: 1100px auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 5px;
+}
+
+.side{
+    margin-left: 10px;
+}

@@ -1,0 +1,43 @@
+.about{
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+.items p{
+    margin-left: 5px;
+}
+
+.items h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.first{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0B1426;
+}
+
+.second{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3E424A;
+
+}

@@ -1,0 +1,52 @@
+.trending {
+    margin-top: 20px;
+
+  }
+  
+  .trending p {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 5px;
+    color: #0F1629;
+    margin-top: 5px;
+  }
+  
+  .trending ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .trending li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+  }
+  
+  .trending li img {
+    margin-right: 10px;
+  }
+  
+  .trending li span {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0F1629;
+    margin-bottom: 8px;
+  }
+
+  .trending ul li span{
+    margin-left: auto;
+  }
+
+  .trending ul li .increase {
+    color: green; /* or any color you prefer for positive increase */
+  }
+  
+  .trending ul li .decrease {
+    color: red; /* or any color you prefer for negative decrease */
+  }
+  
