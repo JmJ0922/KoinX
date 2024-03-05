@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Coin.css';
 import image from './image.svg';
-import TradingViewWidget from 'react-tradingview-widget';
+import TradingViewWidget from '../TradingView/TradingViewWidget';
 
 
 const Coin = () => {
@@ -53,19 +53,10 @@ const Coin = () => {
 </div>
 
         )}
+        <hr/>
       </div>
       <div className='chart'>
-        <TradingViewWidget
-          symbol='COINBASE:BTCUSD'
-          interval='D'
-          timezone='Etc/UTC'
-          locale='en'
-          autosize
-          hide_side_toolbar={false}
-          enable_publishing={false}
-          allow_symbol_change={true}
-          container_id='tv_chart_container'
-        />
+        <TradingViewWidget/>
       </div>
     </div>
   );
