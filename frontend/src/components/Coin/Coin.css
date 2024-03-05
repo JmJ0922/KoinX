@@ -1,3 +1,67 @@
-.coin{
-    
-}
+.coin {
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px; 
+  }
+  
+  .items {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .head {
+    display: flex;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .items h3 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0B1426;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .items span {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5D667B;
+  }
+  
+  .rank {
+    background: #768396;
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+  }
+  
+  .rank span {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  
+  .chart {
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  
