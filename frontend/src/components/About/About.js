@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import Calc from '../Calc/Calc'
 
 const About = () => {
   return (
@@ -24,7 +25,15 @@ Fermentum hendrerit imperdiet nulla viverra faucibus. Sit aliquam massa vel conv
 <hr />
       </div>
       <h3>Already Holding Bitcoin?</h3>
-      
+      <div>
+        <Calc/>
+        <hr/>
+      </div>
+      <div>
+        <p className='second'>Fermentum hendrerit imperdiet nulla viverra faucibus. Sit aliquam massa vel convallis duis ac. Mi adipiscing semper scelerisque porttitor pulvinar nunc risus. Fermentum potenti iaculis lacinia congue ipsum fames amet dui. Purus ultrices tincidunt volutpat in eget. Ullamcorper dui
+
+</p>
+      </div>
     </div>
     </div>
   )
