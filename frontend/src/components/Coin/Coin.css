@@ -2,7 +2,7 @@
     background: #FFFFFF;
     padding: 10px;
     border-radius: 8px;
-    margin-top: 10px; 
+     
   }
   
   .items {
@@ -65,3 +65,65 @@
     margin-top: 10px; /* Adjust margin as needed */
   }
   
+  .total{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Price {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .Price p {
+    margin-right: 10px; /* Adjust the gap between dollar value and change */
+  }
+  
+  .change {
+    font-size: 16px; /* Adjust font size as needed */
+    margin-left: 70px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .positive {
+    color: green;
+  }
+  
+  .negative {
+    color: red;
+  }
+  
+  .dollar {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0B1426;
+    margin-bottom: 3px;
+    margin-top: 0;
+  }
+  
+  .inr{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0px;
+    color: #0B1426;
+
+  }
+
+  .hour{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #768396;
+
+  }
