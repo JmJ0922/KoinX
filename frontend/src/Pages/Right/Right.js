@@ -4,8 +4,8 @@ import Coin from '../../components/Coin/Coin'
 import Performance from '../../components/Performance/Performance'
 import Sentiment from '../../components/Sentiment/Sentiment'
 import About from '../../components/About/About'
-import Tokenizer from '../../components/Tokenizer/Tokenizer'
 import Team from '../../components/Team/Team'
+import Tokenomics from '../../components/Tokenomics/Tokenomics'
 
 
 const Right = () => {
@@ -15,7 +15,7 @@ const Right = () => {
     <Performance/>
     <Sentiment/>
     <About/>
-    <Tokenizer/>
+    <Tokenomics/>
     <Team/>
     </div>
   )
