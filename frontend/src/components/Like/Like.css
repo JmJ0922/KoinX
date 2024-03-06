@@ -27,6 +27,7 @@
     border: 1px solid #E3E3E3;
     width: 252px;
     height: 156px;
+    border-radius: 8px;
 }
 
 .first-line{
@@ -35,26 +36,43 @@
 
 .card-container{
     display: flex;
-    border: 1px solid #E3E3E3
+    border: 1px solid #E3E3E3;
+    margin-bottom: 30px;
 }
 
 .all{
     display: flex;
     /* flex-direction: column; */
+    flex-direction: column;
+    /* border: none; */
 }
 
 .gr{
     align-self: center;
 }
 
-.curr{
 
-}
 
-.card ul li .increase {
-    color: green; /* or any color you prefer for positive increase */
+  
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  .card ul li .decrease {
-    color: red; /* or any color you prefer for negative decrease */
+  .first-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Adjust as needed */
+    margin-right: 5px;
   }
+  
+  .first-line img {
+    margin-right: 10px; /* Adjust as needed */
+  }
+  
+  .curr {
+    margin-top: 10px; /* Adjust as needed */
+  }
+  
