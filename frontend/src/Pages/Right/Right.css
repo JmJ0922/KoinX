@@ -2,3 +2,47 @@
     display: flex;
     flex-direction: column;
 }
+
+.overview{
+    display: flex;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .overview span{
+    margin-right: 70px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-align: left;
+
+  }
+
+  .overview span:nth-of-type(1){
+    color: #0141CF;
+    font-weight: 600;
+  }
+
+  .navbar {
+    display: flex;
+    border-bottom: 2px solid #ccc; /* Border line at the bottom */
+   cursor: pointer;
+  }
+  
+  .nav-item {
+    /* padding:  20px; */
+    cursor: pointer;
+    margin-right: 70px;
+    margin-top: 30px;
+    margin-right: 70px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .nav-item.active {
+    border-bottom: 2px solid #0141CF; /* Border line at the bottom for active item */
+    color: #0141CF;
+    font-weight: 600;
+  }
+  

@@ -19,7 +19,7 @@ const Calc = () => {
         <div>
         <img src={image2} alt="Image" width="128px" height="128px"/></div>
         <div>
-            <p>Calculate your tax liability</p>
+            <p>Calculate your tax <br/>liability</p>
             <button className='btn'><span>Check Now  </span> <span className="arrow">&rarr;</span></button>
         </div>
         </div>
