@@ -75,53 +75,86 @@ const Performance = () => {
     <div className='fund'>
         <div className='one-side'>
           <p>Bitcoin Price</p>
-          {bitcoinData && (
-            <p>{formatPrice(bitcoinData.market_data.current_price.usd)}</p>
-          )}
+          {bitcoinData ? (
+  <span>{formatPrice(bitcoinData.market_data.current_price.usd)}</span>
+) : (
+  <span>N/A</span>
+)}
+
           <p>24h Low / 24h High</p>
-          {bitcoinData && (
-            <p>
-              {formatPrice(bitcoinData.market_data.low_24h.usd)} /{' '}
-              {formatPrice(bitcoinData.market_data.high_24h.usd)}
-            </p>
-          )}
+          {bitcoinData ? (
+  <span>
+    {formatPrice(bitcoinData.market_data.low_24h.usd)} /{' '}
+    {formatPrice(bitcoinData.market_data.high_24h.usd)}
+  </span>
+) : (
+  <span>N/A / N/A</span>
+)}
+
           <p>7d Low / 7d High</p>
-          {sevenDayLowHigh && <p>${sevenDayLowHigh.low.toFixed(2)} / ${sevenDayLowHigh.high.toFixed(2)}</p>}
+          {sevenDayLowHigh ? (
+  <span>${sevenDayLowHigh.low.toFixed(2)} / ${sevenDayLowHigh.high.toFixed(2)}</span>
+) : (
+  <span>N/A</span> 
+)}
+
           <p>Trading Volume</p>
-          {bitcoinData && (
-            <p>{formatPrice(bitcoinData.market_data.total_volume.usd)}</p>
-          )}
+          {bitcoinData ? (
+  <span>{formatPrice(bitcoinData.market_data.total_volume.usd)}</span>
+) : (
+  <span>N/A</span>
+)}
+
           <p>Market Cap Rank</p>
-          {bitcoinData && <p>#{bitcoinData.market_cap_rank}</p>}
+          {bitcoinData ? (
+  <span>#{bitcoinData.market_cap_rank}</span>
+) : (
+  <span>N/A</span> 
+)}
+
         </div>
         <div className='one-side'>
           <p>Market Cap</p>
-          {bitcoinData && (
-            <p>{formatPrice(bitcoinData.market_data.market_cap.usd)}</p>
-          )}
+          {bitcoinData ? (
+  <span>{formatPrice(bitcoinData.market_data.market_cap.usd)}</span>
+) : (
+  <span>N/A</span>
+)}
+
           <p>Market Cap Dominance</p>
           {bitcoinData && bitcoinData.market_cap_percentage ? (
-  <p>{bitcoinData.market_cap_percentage}%</p>
+  <span>{bitcoinData.market_cap_percentage}%</span>
 ) : (
-  <p>38.343%</p>
+  <span>38.343%</span>
 )}
 
 
           <p>Volume / Market Cap</p>
           {bitcoinData && bitcoinData.market_cap && bitcoinData.total_volume ? (
-  <p>{(bitcoinData.total_volume / bitcoinData.market_cap * 100).toFixed(2)}%</p>
+  <span>{(bitcoinData.total_volume / bitcoinData.market_cap * 100).toFixed(2)}%</span>
 ) : (
-  <p>0.0718</p>
+  <span>0.0718</span>
 )}
 
           <p>All-Time High</p>
-          {bitcoinData && (
-            <p>{formatPrice(bitcoinData.market_data.ath.usd)} ({formatPercentage(bitcoinData.market_data.ath_change_percentage.usd)})</p>
-          )}
+          {bitcoinData ? (
+  <span>
+    {formatPrice(bitcoinData.market_data.ath.usd)} ({formatPercentage(bitcoinData.market_data.ath_change_percentage.usd)})
+  </span>
+) : (
+  <span>N/A</span>
+)}
+
           <p>All-Time Low</p>
-          {bitcoinData && (
-            <p>{formatPrice(bitcoinData.market_data.atl.usd)} ({formatPercentage(bitcoinData.market_data.atl_change_percentage.usd)})</p>
-          )}
+          {bitcoinData ? (
+  <span>
+    {formatPrice(bitcoinData.market_data.atl.usd)} (
+    {formatPercentage(bitcoinData.market_data.atl_change_percentage.usd)})
+  </span>
+) : (
+  <span>N/A</span>
+)}
+
         </div>
       </div>
     </div>
