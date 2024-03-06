@@ -1,10 +1,13 @@
 import React from 'react'
 import './Navbar.css'
+import  image  from './image.svg';
 
 const Navbar = () => {
   return (
     <div className='container'>
-        <h1>KoinX</h1>
+        
+        <img className="logos" src={image} alt="Image" width="96px" height="24px"/>
+
         <nav>
             <div className='special'>
                 <span>Crypto Taxes</span>
