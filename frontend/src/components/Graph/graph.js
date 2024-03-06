@@ -35,7 +35,7 @@ const Graph = () => {
         <div className="graph-container">
             <div className="align">
                 <div className="paragraph">
-                    <p className='high'>Today's Low</p>
+                    <h6 className='high'>Today's Low</h6>
                     <p className='low'>{low}</p>
                 </div>
                 <div className="slider-container">
@@ -50,13 +50,13 @@ const Graph = () => {
                     {currentPrice != null && <div className="price-indicator">${currentPrice.toFixed(2)}</div>}
                 </div>
                 <div className="paragraph">
-                    <p className='high'>Today's High</p>
-                    <p className='low'>{high}</p>
+                    <h6 className='high'>Today's High</h6>
+                    <h4 className='low'>{high}</h4>
                 </div>
             </div>
             <div className="align">
                 <div className="paragraph">
-                    <p className='high'>52W Low</p>
+                    <h6 className='high'>52W Low</h6>
                     <p className='low'>{low}</p>
                 </div>
                 <div className="slider-container">
@@ -71,7 +71,7 @@ const Graph = () => {
                     {currentPrice != null && <div className="price-indicator">${currentPrice.toFixed(2)}</div>}
                 </div>
                 <div className="paragraph">
-                    <p className='high'>52W High</p>
+                    <h6 className='high'>52W High</h6>
                     <p className='low'>{high}</p>
                 </div>
             </div>

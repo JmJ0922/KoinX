@@ -85,8 +85,10 @@ const Performance = () => {
 ) : (
   <span>N/A</span>
 )}
+<div className="line"></div>
 
           <p>24h Low / 24h High</p>
+          
           {bitcoinData ? (
   <span>
     {formatPrice(bitcoinData.market_data.low_24h.usd)} /{' '}
@@ -94,21 +96,22 @@ const Performance = () => {
   </span>
 ) : (
   <span>N/A / N/A</span>
-)}
+)} 
+<div className="line"></div>
 
           <p>7d Low / 7d High</p>
           {sevenDayLowHigh ? (
   <span>${sevenDayLowHigh.low.toFixed(2)} / ${sevenDayLowHigh.high.toFixed(2)}</span>
 ) : (
   <span>N/A</span> 
-)}
+)}<div className="line"></div>
 
           <p>Trading Volume</p>
           {bitcoinData ? (
   <span>{formatPrice(bitcoinData.market_data.total_volume.usd)}</span>
 ) : (
   <span>N/A</span>
-)}
+)}<div className="line"></div>
 
           <p>Market Cap Rank</p>
           {bitcoinData ? (
@@ -116,7 +119,7 @@ const Performance = () => {
 ) : (
   <span>N/A</span> 
 )}
-
+<div className="line"></div>
         </div>
         <div className='one-side'>
           <p>Market Cap</p>
@@ -124,7 +127,7 @@ const Performance = () => {
   <span>{formatPrice(bitcoinData.market_data.market_cap.usd)}</span>
 ) : (
   <span>N/A</span>
-)}
+)}<div className="line"></div>
 
           <p>Market Cap Dominance</p>
           {bitcoinData && bitcoinData.market_cap_percentage ? (
@@ -132,14 +135,14 @@ const Performance = () => {
 ) : (
   <span>38.343%</span>
 )}
-
+<div className="line"></div>
 
           <p>Volume / Market Cap</p>
           {bitcoinData && bitcoinData.market_cap && bitcoinData.total_volume ? (
   <span>{(bitcoinData.total_volume / bitcoinData.market_cap * 100).toFixed(2)}%</span>
 ) : (
   <span>0.0718</span>
-)}
+)}<div className="line"></div>
 
           <p>All-Time High</p>
           {bitcoinData ? (
@@ -148,7 +151,7 @@ const Performance = () => {
   </span>
 ) : (
   <span>N/A</span>
-)}
+)}<div className="line"></div>
 
           <p>All-Time Low</p>
           {bitcoinData ? (
@@ -158,7 +161,7 @@ const Performance = () => {
   </span>
 ) : (
   <span>N/A</span>
-)}
+)}<div className="line"></div>
 
         </div>
       </div>

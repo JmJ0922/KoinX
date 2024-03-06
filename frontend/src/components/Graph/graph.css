@@ -8,13 +8,15 @@
     flex: none;
     order: 1;
     flex-grow: 1;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .align {
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Vertically center the items */
 }
+
 
 .range-slider {
     /* Hide the default slider appearance */
@@ -62,6 +64,7 @@
     letter-spacing: 0em;
     text-align: left;
     color: #44475B;
+    margin-top: 3px;
 }
 
 
