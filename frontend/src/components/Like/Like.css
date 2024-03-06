@@ -75,4 +75,13 @@
   .curr {
     margin-top: 10px; /* Adjust as needed */
   }
+
+  .increase {
+    color: green; /* or any other style you want for increase */
+  }
+  
+  .decrease {
+    color: red; /* or any other style you want for decrease */
+  }
+  
   

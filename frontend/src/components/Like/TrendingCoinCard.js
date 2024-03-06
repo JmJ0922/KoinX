@@ -6,11 +6,11 @@ const TrendingCoinCard = ({ coin }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    setCurrentSlide(prevSlide => (prevSlide === 2 ? 0 : prevSlide + 1)); // Assuming there are 3 slides in total
+    setCurrentSlide(prevSlide => (prevSlide === 5 ? 0 : prevSlide + 1)); // Assuming there are 6 slides in total
   };
-
+  
   const prevSlide = () => {
-    setCurrentSlide(prevSlide => (prevSlide === 0 ? 2 : prevSlide - 1)); // Assuming there are 3 slides in total
+    setCurrentSlide(prevSlide => (prevSlide === 0 ? 5 : prevSlide - 1)); // Assuming there are 6 slides in total
   };
 
   return (
