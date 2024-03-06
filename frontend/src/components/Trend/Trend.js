@@ -36,15 +36,16 @@ const Trend = () => {
     <div className='trending'>
         <p>Trending Coins (24h)</p>
         <ul>
-            {trendingCoins.map((coin, index)=>(
-                <li key={index}>
-                        <img src={coin.item.large} alt={coin.item.symbol} width="20" height="20" /> 
-                        {coin.item.name}  
-                        <span className={coin.priceIncrease >= 0 ? 'increase' : 'decrease'}>
-          {Math.abs(coin.priceIncrease).toFixed(2)}%
+        {trendingCoins.map((coin, index) => (
+    <li key={index}>
+        <img src={coin.item?.large ?? 'default_large_image_url'} alt={coin.item?.symbol ?? 'N/A'} width="20" height="20" /> 
+        {coin.item?.name ?? 'Unknown'}  
+        <span className={coin.priceIncrease >= 0 ? 'increase' : 'decrease'}>
+            {Math.abs(coin.priceIncrease ?? 0).toFixed(2)}%
         </span>
-                    </li>
-            ))}
+    </li>
+))}
+
         </ul>
     </div>
   )

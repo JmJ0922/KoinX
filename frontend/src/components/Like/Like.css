@@ -1,0 +1,60 @@
+.like{
+    background: #FFFFFF;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.items-n{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    margin-left: 25px;
+}
+
+.items-n h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+    border: 1px solid #E3E3E3;
+    width: 252px;
+    height: 156px;
+}
+
+.first-line{
+    display: flex;
+}
+
+.card-container{
+    display: flex;
+    border: 1px solid #E3E3E3
+}
+
+.all{
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.gr{
+    align-self: center;
+}
+
+.curr{
+
+}
+
+.card ul li .increase {
+    color: green; /* or any color you prefer for positive increase */
+  }
+  
+  .card ul li .decrease {
+    color: red; /* or any color you prefer for negative decrease */
+  }

@@ -1,4 +1,4 @@
-.slides {
+.carousel {
     position: relative;
     overflow: hidden;
 }
@@ -33,11 +33,11 @@
     color: #333;
     font-size: 24px;
     cursor: pointer;
-    border-radius: 50%; /* Make the border-radius 50% to create a round button */
-    width: 40px; /* Adjust width and height as needed */
+    border-radius: 50%;
+    width: 40px;
     height: 40px;
-    opacity: 0; /* Initially hide the buttons */
-    transition: opacity 0.3s ease; /* Add transition effect */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .prev-btn {
@@ -48,9 +48,9 @@
     right: 0;
 }
 
-.slides:hover .prev-btn,
-.slides:hover .next-btn {
-    opacity: 1; /* Show buttons on hover */
+.carousel:hover .prev-btn,
+.carousel:hover .next-btn {
+    opacity: 1;
 }
 
 .slide .content-container p:first-child {
@@ -72,6 +72,6 @@
 }
 
 .slide-content {
-    padding: 20px; /* Adjust the padding as needed */
+    padding: 20px;
     font-family: 'SF Pro Text', sans-serif;
 }

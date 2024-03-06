@@ -19,9 +19,9 @@ const Home = () => {
         <div className='side'>
             <Side/>
         </div>
-        <Like/>
+        
         </div>
-
+        <Like/>
     </div>
   )
 }
