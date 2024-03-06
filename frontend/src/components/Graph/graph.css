@@ -1,0 +1,78 @@
+.graph-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 8px;
+    width: 598.8px;
+    height: 44.63px;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    margin-bottom: 100px;
+}
+
+.align {
+    display: flex;
+    justify-content: space-between;
+}
+
+.range-slider {
+    /* Hide the default slider appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    /* Override default styles */
+    width: 582.8px;
+    height: 4.63px;
+    background: transparent;
+    border-radius: 9.6px;
+    outline: none;
+    /* Position the thumb */
+    position: relative;
+    top: -4px;
+    /* Apply slider fill gradient as track background */
+    background: linear-gradient(90deg, #FF4949 0%, #FF4E11 15.34%, #FC870A 30.45%, #FFAF11 48.68%, #C2CB21 62.75%, #11EB68 100.03%);
+}
+
+
+.price-indicator {
+    /* Your price indicator styles */
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #44475B;
+}
+
+.high {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #44475B;
+}
+
+.low {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #44475B;
+}
+
+
+.range-slider::-webkit-slider-thumb {
+    /* Hide the thumb by default */
+    display: none;
+}
+
+.range-slider:hover::-webkit-slider-thumb {
+    /* Show the thumb on hover */
+    display: block;
+    background-color: black;
+    cursor: pointer;
+}

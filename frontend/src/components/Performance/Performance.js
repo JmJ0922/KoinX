@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Performance.css'
 import  image2  from './image2.svg';
+import Graph from '../Graph/graph';
 
 const Performance = () => {
   const [bitcoinData, setBitcoinData] = useState(null);
@@ -67,8 +68,12 @@ const Performance = () => {
   return (
     <div className='perform'>
     <div className='items'>
+    <div>
     <h3>Performance</h3>
-    <div></div>
+    <div><Graph/></div>
+    </div>
+    <br/>
+    <br/>
     <div><p style={{ display: 'inline-block', marginRight: '5px' }}>Fundamentals</p>
 <img src={image2} alt="Image" width="15px" height="20px" style={{ verticalAlign: 'middle' }} /></div>
     </div>

@@ -12,7 +12,8 @@
 }
 
 .items p{
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 .items h3{
@@ -59,3 +60,4 @@
     text-align: left;
 
 }
+
