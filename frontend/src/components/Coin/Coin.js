@@ -44,8 +44,9 @@ const Coin = () => {
         {bitcoinData && (
           <div className='total'>
   <div className='Price'>
-    <p className='dollar'>${bitcoinData.usd}</p>
-    <p className={`change ${bitcoinData.usd_24h_change >= 0 ? 'positive' : 'negative'}`}>{bitcoinData.usd_24h_change}%</p><span className='hour'>(24H)</span>
+    <p className='dollar'>${bitcoinData.usd}</p><p className={`change ${bitcoinData.usd_24h_change >= 0 ? 'positive' : 'negative'}`}>
+  {bitcoinData.usd_24h_change.toFixed(2)}%
+</p><span className='hour'>(24H)</span>
   </div>
   
     <p className='inr'>₹{bitcoinData.inr}</p>
