@@ -24,7 +24,7 @@
 
   .navbar {
     display: flex;
-    border-bottom: 2px solid #ccc; /* Border line at the bottom */
+    border-bottom: 2px solid #ccc; 
    cursor: pointer;
   }
   
@@ -41,7 +41,7 @@
   }
   
   .nav-item.active {
-    border-bottom: 2px solid #0141CF; /* Border line at the bottom for active item */
+    border-bottom: 2px solid #0141CF; 
     color: #0141CF;
     font-weight: 600;
   }

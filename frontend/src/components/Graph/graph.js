@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './graph.css'; // Import your CSS file for styling
+import './graph.css'; 
 
 const Graph = () => {
     const [low, setLow] = useState(null);

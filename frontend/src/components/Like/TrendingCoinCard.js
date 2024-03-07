@@ -1,4 +1,3 @@
-// TrendingCoinCard.js
 import React, { useState } from 'react';
 import './Like.css';
 
@@ -6,11 +5,11 @@ const TrendingCoinCard = ({ coin }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    setCurrentSlide(prevSlide => (prevSlide === 5 ? 0 : prevSlide + 1)); // Assuming there are 6 slides in total
+    setCurrentSlide(prevSlide => (prevSlide === 5 ? 0 : prevSlide + 1)); 
   };
   
   const prevSlide = () => {
-    setCurrentSlide(prevSlide => (prevSlide === 0 ? 5 : prevSlide - 1)); // Assuming there are 6 slides in total
+    setCurrentSlide(prevSlide => (prevSlide === 0 ? 5 : prevSlide - 1)); 
   };
 
   return (

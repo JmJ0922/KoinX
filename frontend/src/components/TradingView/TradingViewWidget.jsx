@@ -1,12 +1,11 @@
-// TradingViewWidget.jsx
 import React, { useEffect, useRef, memo } from 'react';
 
 function TradingViewWidget() {
   const container = useRef();
-  const scriptAdded = useRef(false); // Ref to track if the script has been added
+  const scriptAdded = useRef(false); 
 
   useEffect(() => {
-    // Check if the script has already been added
+
     if (!scriptAdded.current) {
       const script = document.createElement("script");
       script.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
@@ -29,7 +28,7 @@ function TradingViewWidget() {
         }`;
 
       container.current.appendChild(script);
-      scriptAdded.current = true; // Update scriptAdded ref
+      scriptAdded.current = true; 
     }
   }, []);
 

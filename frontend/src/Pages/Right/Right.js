@@ -9,11 +9,11 @@ import Tokenomics from '../../components/Tokenomics/Tokenomics'
 
 
 const Right = () => {
-  const [activeItem, setActiveItem] = useState('overview'); // State to track active menu item
+  const [activeItem, setActiveItem] = useState('overview'); 
 
-  // Function to handle click event on menu items
+  
   const handleItemClick = (itemId) => {
-    setActiveItem(itemId); // Update active menu item
+    setActiveItem(itemId); 
   };
 
   return (

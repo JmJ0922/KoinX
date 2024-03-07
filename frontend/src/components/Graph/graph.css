@@ -14,30 +14,25 @@
 .align {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Vertically center the items */
+    align-items: center; 
 }
 
 
 .range-slider {
-    /* Hide the default slider appearance */
     -webkit-appearance: none;
     appearance: none;
-    /* Override default styles */
     width: 582.8px;
     height: 4.63px;
     background: transparent;
     border-radius: 9.6px;
     outline: none;
-    /* Position the thumb */
     position: relative;
     top: -4px;
-    /* Apply slider fill gradient as track background */
     background: linear-gradient(90deg, #FF4949 0%, #FF4E11 15.34%, #FC870A 30.45%, #FFAF11 48.68%, #C2CB21 62.75%, #11EB68 100.03%);
 }
 
 
 .price-indicator {
-    /* Your price indicator styles */
     font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 400;
@@ -69,12 +64,10 @@
 
 
 .range-slider::-webkit-slider-thumb {
-    /* Hide the thumb by default */
     display: none;
 }
 
 .range-slider:hover::-webkit-slider-thumb {
-    /* Show the thumb on hover */
     display: block;
     background-color: black;
     cursor: pointer;

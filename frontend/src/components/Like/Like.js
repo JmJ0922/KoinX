@@ -1,4 +1,3 @@
-// Like.js
 import React, { useState, useEffect } from 'react';
 import './Like.css';
 import TrendingCoinCard from './TrendingCoinCard';
@@ -14,7 +13,7 @@ const Like = () => {
           throw new Error('Failed to fetch trending coins');
         }
         const data = await response.json();
-        const topTrendingCoins = data.coins.slice(0, 6); // Fetching top 6 trending coins
+        const topTrendingCoins = data.coins.slice(0, 6);
 
         const coinsWithPriceIncrease = await Promise.all(topTrendingCoins.map(async (coin) => {
           const priceResponse = await fetch(`https://api.coingecko.com/api/v3/coins/${coin.item.id}/market_chart?vs_currency=usd&days=1`);

@@ -38,7 +38,7 @@
 }
 
 .one-side p {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
   }
   
 
@@ -66,7 +66,7 @@
     height: 1px;
     background-color: #44475B;
     margin: 8px 0;
-    grid-column: 1 / -1; /* Make the line span across both columns */
+    grid-column: 1 / -1; 
     border: none;
   }
   
