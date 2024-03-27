@@ -1,4 +1,4 @@
-.like{
+/* .like{
     background: #FFFFFF;
     padding: 10px;
     margin-top: 10px;
@@ -42,9 +42,9 @@
 
 .all{
     display: flex;
-    /* flex-direction: column; */
+   
     flex-direction: column;
-    /* border: none; */
+    
 }
 
 .gr{
@@ -92,4 +92,4 @@
     height: 28px;
   }
   
-  
+   */
